@@ -31,6 +31,11 @@ Note:
 - <a href="https://www.amazon.com/gp/product/B07H7FCWDQ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1">Copper Wire</a>
 - Toothbrush Head
 
+Tools:
+- Hot Glue Gun
+- Soldering Iron
+- Solder
+
 ---
 
 #### <a target="_blank" href="https://makeabilitylab.github.io/physcomp/advancedio/vibromotor.html">Vibromotors</a>
