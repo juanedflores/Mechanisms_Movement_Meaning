@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Kinetic Artist Database</title>
+  <title>Mechanisms Database</title>
 
   <!-- UIKit files -->
   <link rel="stylesheet" href="css/uikit.min.css" />
@@ -24,9 +24,10 @@
         <ul class="uk-navbar-nav" style="">
           <li class=""><a href="index.html">Week Overview</a></li>
           <li class=""><a href="artist_database.html">Artworks</a></li>
-          <li class="uk-active" style="background: #c9c9c9"><a href="electronic_component_database.html">Electronic
+          <li class=""><a href="electronic_component_database.html">Electronic
               Components</a></li>
-          <li class=""><a href="mechanisms_database.html">Machines / Movements</a>
+          <li class="uk-active" style="background: #c9c9c9"><a href="mechanisms_database.html">Machines / Movements</a>
+          </li>
         </ul>
         <button class="uk-button uk-button-default" type="button" style="margin-left: 30px;">Filter</button>
         <div uk-dropdown>
@@ -36,14 +37,6 @@
           </ul>
         </div>
       </div>
-
-      <!-- <div class="nav-overlay uk-navbar-right"> -->
-      <!--   <form class="uk-search uk-search-default"> -->
-      <!--     <span uk-search-icon></span> -->
-      <!--     <input class="uk-search-input" style="width: 95%; background: white" type="search" placeholder="Search" -->
-      <!--       aria-label="Search" /> -->
-      <!--   </form> -->
-      <!-- </div> -->
 
       <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
         <div class="uk-navbar-item uk-width-expand">
@@ -59,33 +52,12 @@
     <!-- ENTRIES -->
     <div class="" style="padding: 30px">
       <ul class="uk-child-width-1-3@m uk-grid-small uk-grid-match js-filter" uk-grid>
-        <li class="dc-motor all">
-          <div>
-            <a target="_blank" href="">
-              <div class="uk-card-small uk-card-default uk-card-body uk-box-shadow-xlarge">
-                <h3 class="cardtitle">Vibromotor</h3>
-                <img src="./electronic_component_database/vibromotor/vibromotor.webp" alt="Vibromotor" uk-image />
-              </div>
-            </a>
-          </div>
-        </li>
         <li class="all">
           <div>
-            <a target="_blank" href="">
+            <a target="_blank" href="mechanisms_database/gears/gears.html">
               <div class="uk-card-small uk-card-default uk-card-body uk-box-shadow-xlarge">
-                <h3 class="cardtitle">Solenoid</h3>
-                <img src="./electronic_component_database/solenoid/solenoid.jpg" alt="Solenoid" uk-image />
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="input all">
-          <div>
-            <a target="_blank" href="">
-              <div class="uk-card-small uk-card-default uk-card-body uk-box-shadow-xlarge">
-                <h3 class="cardtitle">Potentiometer</h3>
-                <img src="./electronic_component_database/potentiometer/potentiometer.jpg" alt="Potentiometer"
-                  uk-image />
+                <h3 class="cardtitle">Gears</h3>
+                <img src="./mechanisms_database/gears/images/spur_gear.gif" alt="Gears" uk-image />
               </div>
             </a>
           </div>
