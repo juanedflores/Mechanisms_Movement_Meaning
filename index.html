@@ -35,6 +35,25 @@
     .uk-navbar-container {
       z-index: 2;
     }
+
+    #canvas-button {
+      display: none;
+    }
+
+    @media screen and (max-width: 700px) {
+      #right-col {
+        margin-left: 0px;
+      }
+
+      #left-col {
+        visibility: hidden;
+      }
+
+      #canvas-button {
+        display: block;
+      }
+
+    }
   </style>
 
 </head>
@@ -44,6 +63,12 @@
   <div uk-filter="target: .js-filter">
     <nav class="uk-navbar-container uk-margin" uk-navbar>
       <div class="nav-overlay uk-navbar-left">
+        <!-- OFFCANVAS BUTTON -->
+        <button id="canvas-button" class="uk-button uk-button-default" type="button" style="border: none;"
+          uk-toggle="target: #off-canvas;">
+          <span uk-icon="icon: menu; ratio: 1.5;" style="color: black"></span>
+        </button>
+
         <a class="uk-navbar-item uk-logo" href="#" style="border: 1px solid #cccccc">Mechanisms, Movement, and
           Meaning</a>
 
@@ -56,6 +81,26 @@
       </div>
     </nav>
 
+
+    <!-- OFFCANVAS -->
+    <div id="off-canvas" class="bar-wrap uk-light" style="padding-top: 100px;" uk-offcanvas>
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul style="padding-top: 20px" class="uk-nav-default uk-nav-parent-icon uk-nav"
+          uk-switcher="connect: .week-content">
+          <li class="uk-parent">
+            <a href="#">Week 1</a>
+          </li>
+          <li class="uk-parent">
+            <a href="#">Week 2</a>
+          </li>
+          <li class="uk-parent uk-active">
+            <a href="#">Week 3</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
     <!-- TOC -->
     <aside id="left-col" class="uk-light">
       <div class="bar-wrap" style="padding-top: 100px;">
