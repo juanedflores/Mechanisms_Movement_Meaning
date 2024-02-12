@@ -61,17 +61,6 @@ A machine is any device that helps you do work, from a hammer to a bicycle. A ha
 
 ---
 
-#### Six Simple Machines
-
-- Levers
-- Pulleys
-- Wheel and Axle
-- Inclined Planes and Wedges
-- Screws
-- Gears
-
----
-
 #### <a href="https://en.wikipedia.org/wiki/Orrery" width="500">Orrery</a>
 
 <img width="500" src="./images/orrery.jpg"></img>
