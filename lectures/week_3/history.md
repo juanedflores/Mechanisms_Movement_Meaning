@@ -96,7 +96,7 @@ Orreries became very popular at this time and were used both for teaching purpos
 <img width="200" src="./images/wheel_duchamp.jpg"></img>
 
 Note:
-When activated by the press of a button, the machine springs to life: through the rapid oscillations caused by a hidden electric motor in the base, it forms the illusion of a sinuously twisting, three-dimensional shape. The image generated through these movements, with its quivering transparency, is that of a ‘standing wave’: a term taken from the field of physics, familiar to Gabo through his studies in natural science and engineering.
+Bicycle Wheel distinguishes itself from all of the artist’s subsequent readymades by virtue of its central object’s implicit movement, a quality Duchamp appreciated for its calming effects. “To see that wheel turning,” he once remarked, “was very soothing, very comforting, a sort of opening of avenues on other things than material life of every day. I liked the idea of having a bicycle wheel in my studio. I enjoyed looking at it, just as I enjoyed looking at the flames dancing in a fireplace. It was like having a fireplace in my studio.”
 
 ---
 

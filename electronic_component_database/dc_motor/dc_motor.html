@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html $if(lang)$ lang="$lang$" $endif$ dir="ltr">
+<html  dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content="pandoc" />
 
-    <title>$if(heading)$$heading$$endif$</title>
+    <title>DC Motors</title>
 
     <!-- UIKit files -->
     <link rel="stylesheet" href="../../css/uikit.min.css" />
@@ -101,7 +101,7 @@
     </style>
 
     <!-- Includes other header content if needed -->
-    $for(header-includes)$ $header-includes$ $endfor$
+    
   </head>
 
   <body>
@@ -111,7 +111,7 @@
         <a class="uk-navbar-item uk-logo" href="../../index.html" style="border: 1px solid #cccccc">Mechanisms, Movement, and Meaning</a>
 
         <ul class="uk-navbar-nav" style="">
-          <li class=""><a href="">$if(heading)$$heading$$endif$</a></li>
+          <li class=""><a href="">DC Motors</a></li>
         </ul>
       </div>
 
@@ -132,19 +132,50 @@
         <button class="uk-offcanvas-close" type="button" uk-close></button>
         <hr />
         <h3>Table of Contents</h3>
-        <div>$toc$</div>
+        <div><ul>
+<li><a href="#what-is-a-dc-motor" id="toc-what-is-a-dc-motor">What is a
+DC Motor?</a></li>
+<li><a href="#brushed-vs.-brushless"
+id="toc-brushed-vs.-brushless">Brushed vs. Brushless</a>
+<ul>
+<li><a href="#brushed-dc-motor" id="toc-brushed-dc-motor">Brushed DC
+Motor</a></li>
+</ul></li>
+</ul></div>
       </div>
     </div>
 
     <aside id="left-col" class="uk-light">
       <div class="bar-wrap" style="padding-top: 100px">
         <h3>Table of Contents</h3>
-        <div>$toc$</div>
+        <div><ul>
+<li><a href="#what-is-a-dc-motor" id="toc-what-is-a-dc-motor">What is a
+DC Motor?</a></li>
+<li><a href="#brushed-vs.-brushless"
+id="toc-brushed-vs.-brushless">Brushed vs. Brushless</a>
+<ul>
+<li><a href="#brushed-dc-motor" id="toc-brushed-dc-motor">Brushed DC
+Motor</a></li>
+</ul></li>
+</ul></div>
       </div>
     </aside>
 
     <div id="right-col">
-      <div class="uk-container uk-margin-medium-top">$body$</div>
+      <div class="uk-container uk-margin-medium-top"><h2
+id="what-is-a-dc-motor">What is a DC Motor?</h2>
+<p>A DC motor converts electrical energy into mechanical (converts
+direct current into a circular motion). It can also work the opposite
+way. If you turn the circular motion manually, it will generate
+electrical energy.</p>
+<h2 id="brushed-vs.-brushless">Brushed vs. Brushless</h2>
+<h3 id="brushed-dc-motor">Brushed DC Motor</h3>
+<p>If you searched on amazon</p>
+<p>How to tell it is a brushed DC Motor:</p>
+<p>Put a voltmeter or oscilloscope on any two heavy wires and spin
+things by hand. If it’s the two wires on a brushed DC motor, then
+spinning it one way will generate a positive voltage, and spinning it
+the other will generate a negative voltage.</p></div>
     </div>
 
     <!-- highlightjs badge -->
