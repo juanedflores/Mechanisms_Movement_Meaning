@@ -28,17 +28,17 @@ On the top left, there is a button with a checkmark. This is the **Verify** butt
 
 The upload button, when pressed, will upload your code to your arduino.
 
-<img src="/arduino_sketches/terminology/images/upload.png"></img>
+<img src="./images/upload.png"></img>
 
 ### Selecting Board & Port
 
 When you connect your Arduino to your computer via USB cable, you should be able to select it from this drop down menu. 
 
-<img src="/arduino_sketches/terminology/images/board.png"></img>
+<img src="./images/board.png"></img>
 
 Another way to select your board, is through the menu bar.
 
-<img style="height:300px" src="/arduino_sketches/terminology/images/port.png"></img>
+<img style="height:300px" src="./images/port.png"></img>
 
 **Tools -> Port: ""**
 
@@ -52,8 +52,8 @@ A port is referring to the name of the Arduino connected to your USB port. It ma
 
 To look at some of the examples that come with the Arduino software:
 
-<img style="height:300px" src="/arduino_sketches/terminology/images/file.png"></img>
+<img style="height:300px" src="./images/file.png"></img>
 
-<img style="height:300px" src="/arduino_sketches/terminology/images/examples.png"></img>
+<img style="height:300px" src="./images/examples.png"></img>
 
 Notice the Blink example. This is usually the example that most people start with.
