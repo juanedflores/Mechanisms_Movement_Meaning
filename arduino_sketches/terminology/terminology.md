@@ -57,3 +57,7 @@ To look at some of the examples that come with the Arduino software:
 <img style="height:300px" src="./images/examples.png"></img>
 
 Notice the Blink example. This is usually the example that most people start with.
+
+### Other Helpful Resources
+
+- <a href="https://itp.nyu.edu/physcomp/lessons/programming-terms-and-programming-environments/">ITP Physical Computing - Programming Terms</a>
