@@ -4,11 +4,13 @@ heading: Fading
 
 The "Fade" and "Fading" examples showcase the use of Pulse Width Modulation (PWM).
 
-> Pulse Width Modulation, or PWM, is a technique for getting analog results with digital means. 
+> "Pulse Width Modulation, or PWM, is a technique for getting analog results with digital means."
+
+#### Digital vs Analog Signals
 
 A digital signal is a signal of discrete values, while an analog signal is a continous signal.
 
-PWM is a digital signal, because it has two states, it is either on, or off (HIGH or LOW). This is essentially a square wave.
+PWM is a digital signal, because it has two states, it is either on or off (`HIGH` or `LOW`). This is essentially a square wave.
 
 On some microcontrollers PWM is only available on selected pins. Please consider the pinout diagram of your board to find out which ones you can use for PWM. They are denoted with a tilde sign (~).
 

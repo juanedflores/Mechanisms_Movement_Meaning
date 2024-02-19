@@ -16,13 +16,13 @@ For more specific rules on the programming language, refer to this <a target="\_
 
 ## The Arduino Software (IDE)
 
-An IDE is an **integrated development environment**. It is a software that provides a developer with tools to write code efficiently. The Arduino software is specifically for writing and uploading code to your Arduino bode. It comes with some features.
+An IDE is an **integrated development environment**. It is a software that provides a developer with tools to write code efficiently. The Arduino software is specifically for writing and uploading code to your Arduino board. It comes with some features:
 
 ### Verify Button
 
 On the top left, there is a button with a checkmark. This is the **Verify** button. When you press this button, the software checks for any errors in your code.
 
-<img src="/arduino_sketches/terminology/images/verify.png"></img>
+<img src="./images/verify.png"></img>
 
 ### Upload Button
 
