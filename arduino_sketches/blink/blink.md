@@ -8,7 +8,7 @@ This is considered the <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%2
 
 It takes advantage of the built-in LED on the Arduino. You can program it right away. The LED has the letter `L` next to it.
 
-<img style="height:300px" src="/arduino_sketches/blink/images/built_in_LED.jpg"></img>
+<img style="height:300px" src="./images/built_in_LED.jpg"></img>
 
 ## The Sketch
 From Arduino "Examples":
@@ -109,7 +109,7 @@ This will blink the red LED in sync with the built-in LED. However, you should h
 
 The actual wiring should look like this:
 
-<img style="height:300px" src="./images/led_circuit.jpg"></img>
+<img style="height:300px" src="./images/led_circuit.png"></img>
 
 To answer why that is, check out this source:
 
