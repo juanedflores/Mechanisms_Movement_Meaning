@@ -2,7 +2,7 @@
 heading: Motor Drivers
 ---
 
-<img width="300px" src="/electronic_component_database/drivers/driver.png"></img>
+<img width="300px" src="./driver.png"></img>
 
 ### What is a Motor Driver?
 
@@ -14,7 +14,7 @@ Saying "to drive a motor", is another way of saying "to control a motor". There 
 
 A driver, is a way of easily interfacing the motor with the microcontroller (For example, the Arduino). In other words, it is the bridge between the motor and the Arduino.
 
-<img width="600px" src="/electronic_component_database/drivers/images/diagram.png"></img>
+<img width="600px" src="./images/diagram.png"></img>
 
 The arduino and the motor will need to be powered **separately**.
 

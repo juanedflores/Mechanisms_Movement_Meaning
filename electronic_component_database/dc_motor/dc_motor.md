@@ -2,7 +2,7 @@
 heading: DC Motors
 ---
 
-<img width="300px" src="/electronic_component_database/dc_motor/dc_motor.jpg"></img>
+<img width="300px" src="./dc_motor.jpg"></img>
 
 ## What is a DC Motor?
 

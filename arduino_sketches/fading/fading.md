@@ -78,6 +78,6 @@ You could do this with a motor instead of an LED, but a motor requires more curr
 
 To hook up a motor to an arduino, use this schematic:
 
-<img style="height:300px" src="/arduino_sketches/fading/images/motor_schematic.jpg"></img>
+<img style="height:300px" src="./images/motor_schematic.jpg"></img>
 
 This is only for low voltage motors, to power higher voltage motors, you will need a different power source.
