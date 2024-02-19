@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content="pandoc" />
 
-    <title>DC Motors</title>
+    <title>Motor Drivers</title>
 
     <!-- UIKit files -->
     <link rel="stylesheet" href="../../css/uikit.min.css" />
@@ -111,7 +111,7 @@
         <a class="uk-navbar-item uk-logo" href="../../index.html" style="border: 1px solid #cccccc">Mechanisms, Movement, and Meaning</a>
 
         <ul class="uk-navbar-nav" style="">
-          <li class=""><a href="">DC Motors</a></li>
+          <li class=""><a href="">Motor Drivers</a></li>
         </ul>
       </div>
 
@@ -133,20 +133,18 @@
         <hr />
         <h3>Table of Contents</h3>
         <div><ul>
-<li><a href="#what-is-a-dc-motor" id="toc-what-is-a-dc-motor">What is a
-DC Motor?</a></li>
-<li><a href="#brushed-vs.-brushless"
-id="toc-brushed-vs.-brushless">Brushed vs. Brushless</a>
+<li><a href="#what-is-a-motor-driver"
+id="toc-what-is-a-motor-driver">What is a Motor Driver?</a></li>
+<li><a href="#driving-a-motor" id="toc-driving-a-motor">Driving a
+motor</a>
 <ul>
-<li><a href="#brushed-dc-motor" id="toc-brushed-dc-motor">Brushed DC
-Motor</a></li>
-<li><a href="#brushless-dc-motor" id="toc-brushless-dc-motor">Brushless
-DC Motor</a></li>
-<li><a href="#how-to-identify-a-brushed-vs.-brushless-dc-motor"
-id="toc-how-to-identify-a-brushed-vs.-brushless-dc-motor">How to
-Identify a Brushed vs. Brushless DC Motor</a></li>
+<li><a href="#turning-on-and-off" id="toc-turning-on-and-off">Turning on
+and off</a></li>
+<li><a href="#controlling-direction"
+id="toc-controlling-direction">Controlling Direction</a></li>
+<li><a href="#controlling-speed" id="toc-controlling-speed">Controlling
+Speed</a></li>
 </ul></li>
-<li><a href="#key-terms" id="toc-key-terms">Key Terms</a></li>
 </ul></div>
       </div>
     </div>
@@ -155,75 +153,64 @@ Identify a Brushed vs. Brushless DC Motor</a></li>
       <div class="bar-wrap" style="padding-top: 100px">
         <h3>Table of Contents</h3>
         <div><ul>
-<li><a href="#what-is-a-dc-motor" id="toc-what-is-a-dc-motor">What is a
-DC Motor?</a></li>
-<li><a href="#brushed-vs.-brushless"
-id="toc-brushed-vs.-brushless">Brushed vs. Brushless</a>
+<li><a href="#what-is-a-motor-driver"
+id="toc-what-is-a-motor-driver">What is a Motor Driver?</a></li>
+<li><a href="#driving-a-motor" id="toc-driving-a-motor">Driving a
+motor</a>
 <ul>
-<li><a href="#brushed-dc-motor" id="toc-brushed-dc-motor">Brushed DC
-Motor</a></li>
-<li><a href="#brushless-dc-motor" id="toc-brushless-dc-motor">Brushless
-DC Motor</a></li>
-<li><a href="#how-to-identify-a-brushed-vs.-brushless-dc-motor"
-id="toc-how-to-identify-a-brushed-vs.-brushless-dc-motor">How to
-Identify a Brushed vs. Brushless DC Motor</a></li>
+<li><a href="#turning-on-and-off" id="toc-turning-on-and-off">Turning on
+and off</a></li>
+<li><a href="#controlling-direction"
+id="toc-controlling-direction">Controlling Direction</a></li>
+<li><a href="#controlling-speed" id="toc-controlling-speed">Controlling
+Speed</a></li>
 </ul></li>
-<li><a href="#key-terms" id="toc-key-terms">Key Terms</a></li>
 </ul></div>
       </div>
     </aside>
 
     <div id="right-col">
-      <div class="uk-container uk-margin-medium-top"><p><img width="300px" src="/electronic_component_database/dc_motor/dc_motor.jpg"></img></p>
-<h2 id="what-is-a-dc-motor">What is a DC Motor?</h2>
-<p>A DC motor converts electrical energy into mechanical (converts
-direct current into a circular motion). It can also work the opposite
-way. If you turn the circular motion manually, it will generate
-electrical energy.</p>
-<p>Put a voltmeter or oscilloscope on any two heavy wires and spin the
-shaft by hand. If it’s the two wires on a brushed DC motor, then
-spinning it one way will generate a positive voltage, and spinning it
-the other will generate a negative voltage.</p>
-<p>(demo)</p>
-<h2 id="brushed-vs.-brushless">Brushed vs. Brushless</h2>
-<h3 id="brushed-dc-motor">Brushed DC Motor</h3>
-<p>Brushed DC motors are typically cheaper and simpler, because of this
-brushed motors are usually found in toys , while brushless motors are
-usually found in higher-end applications such as power tools.</p>
-<h3 id="brushless-dc-motor">Brushless DC Motor</h3>
-<p>Brushless DC Motor (BLDC) are more efficient, last longer, and
-require higher voltage.</p>
-<h3 id="how-to-identify-a-brushed-vs.-brushless-dc-motor">How to
-Identify a Brushed vs. Brushless DC Motor</h3>
-<p>The biggest clue is the wire count. If the motor has two wires, it is
-likely a brushed DC motor.</p>
-<p>If it is powered by a battery, there is also a good chance that it is
-a DC brushless motor.</p>
-<p>If it has three wires, it might be an AC motor.</p>
-<h2 id="key-terms">Key Terms</h2>
-<p><strong>Torque</strong> - Spinning force. More torque means faster
-spin.</p>
-<p>Parts of a Motor:</p>
+      <div class="uk-container uk-margin-medium-top"><p><img width="300px" src="/electronic_component_database/drivers/driver.png"></img></p>
+<h3 id="what-is-a-motor-driver">What is a Motor Driver?</h3>
+<p>Saying “to drive a motor”, is another way of saying “to control a
+motor”. There are different things you can control:</p>
 <ul>
-<li><strong>Stator</strong>: Stationary part of the motor.</li>
-<li><strong>Shaft</strong>: The spinning rod of the motor.</li>
-<li><strong>Rotor / Armature</strong>: Attached to the shaft, contain
-coil windings to create electromagnets. Also rotates with the
-shaft.</li>
-<li><strong>Commutator</strong>: Attached to the coils, is a ring with
-separated segments / plates. These segments are touched by the brushes
-to complete the electromagnet circuit.</li>
-<li><strong>Brushes</strong>: The brushes are spring loaded onto the
-commutator segments and are receiving power from the terminals.</li>
-<li><strong>Terminals</strong>: The positive and negative terminals are
-where you supply power to move the motor.</li>
+<li>Turning it on/off</li>
+<li>Direction</li>
+<li>Speed</li>
 </ul>
+<p>A driver, is a way of easily interfacing the motor with the
+microcontroller (For example, the Arduino). In other words, it is the
+bridge between the motor and the Arduino.</p>
+<p><img width="600px" src="/electronic_component_database/drivers/images/diagram.png"></img></p>
+<p>The arduino and the motor will need to be powered
+<strong>separately</strong>.</p>
+<p>Not all motor drivers are the same. Some are for specific voltage
+ranges. When selecting a motor driver, make sure you know what supply
+voltage and current the motor you have needs. All driver ICs (Integrated
+Circuits) come with datasheets that have extra information. Be sure to
+do your research on how to use them.</p>
+<h3 id="driving-a-motor">Driving a motor</h3>
+<h4 id="turning-on-and-off">Turning on and off</h4>
+<p>An Arduino sends control signals at a low voltage, this means that it
+is meant to send signals that control something, not necessarilly to
+power it.</p>
+<h4 id="controlling-direction">Controlling Direction</h4>
+<p>Reversing the polarity of the circuit will cause the motor to spin in
+the opposite direction. Instead of reversing the polarity manually (like
+reversing the battery) a popular circuit that applies this using
+switches is called an
+<a href="/electronic_component_database/h_bridge_circuit/h_bridge_circuit.html">H-Bridge
+circuit</a>.</p>
+<h4 id="controlling-speed">Controlling Speed</h4>
+<p>Controlling speed is done by using something called Pulse Width
+Modulation (PWM). Check out a basic introduction on PWM in the
+<a href="https://docs.arduino.cc/learn/microcontrollers/analog-output/">Arduino
+website.</a></p>
 <p>Resources:</p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=CWulQ1ZSE3c">How a DC Motor
-Works (Video)</a></li>
-<li><a href="https://www.youtube.com/watch?v=1AaUK6pT_cE">Parts of a DC
-Motor (Video)</a></li>
+<li><a target="\_blank" href="https://www.youtube.com/watch?v=ygrsIqWOh3Y">Using
+Motor Drivers with Microcontrollers</a></li>
 </ul></div>
     </div>
 
