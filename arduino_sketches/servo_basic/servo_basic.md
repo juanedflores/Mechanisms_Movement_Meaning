@@ -29,7 +29,7 @@ void setup() {
 }
 
 void loop() {
-  myservo.write(pos);  // tell servo to go to position in variable 'pos'
+  myservo.write(180);  // tell servo to go to position in variable 'pos'
 }
 ```
 
