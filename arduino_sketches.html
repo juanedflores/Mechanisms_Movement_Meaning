@@ -106,16 +106,30 @@
     <div id="off-canvas" class="bar-wrap uk-light" style="padding-top: 100px" uk-offcanvas>
       <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type="button" uk-close></button>
-        <ul style="padding-top: 20px" class="uk-nav-default uk-nav-parent-icon uk-nav"
-          uk-switcher="connect: .week-content">
-          <li class="uk-parent">
-            <a href="#">All</a>
-          </li>
-          <li class="uk-parent">
+        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+          <li uk-filter-control="filter: .all"><a href="#">All</a></li>
+          <li uk-filter-control="filter: .basics" class="uk-parent">
             <a href="#">Basics</a>
+            <ul class="uk-nav-sub">
+              <li uk-filter-control="filter: .terminology"><a href="#">Basic Familiarity</a></li>
+              <li uk-filter-control="filter: .blink"><a href="#">Blink</a></li>
+              <li uk-filter-control="filter: .fade"><a href="#">Fade / Fading</a></li>
+              <li uk-filter-control="filter: .button"><a href="#">Button</a></li>
+              <li uk-filter-control="filter: .analogRead"><a href="#">analogRead</a></li>
+              <li uk-filter-control="filter: .led-toggle"><a href="#">LED Toggle</a></li>
+              <li uk-filter-control="filter: .led-functions"><a href="#">Functions</a></li>
+            </ul>
           </li>
           <li class="uk-parent">
             <a href="#">DC Motor Control</a>
+          </li>
+          <li class="uk-parent">
+            <a href="#">Servo Motor Control</a>
+            <ul class="uk-nav-sub">
+              <li uk-filter-control="filter: .servo-basic"><a href="#">Servo Basic</a></li>
+              <li uk-filter-control="filter: .sweep"><a href="#">Sweep</a></li>
+              <li uk-filter-control="filter: .servo-pot"><a href="#">Servo w/Potentiometer</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -128,12 +142,25 @@
           <li uk-filter-control="filter: .basics" class="uk-parent">
             <a href="#">Basics</a>
             <ul class="uk-nav-sub">
-              <li uk-filter-control="filter: .terminology"><a href="#">Terminology</a></li>
+              <li uk-filter-control="filter: .terminology"><a href="#">Basic Familiarity</a></li>
               <li uk-filter-control="filter: .blink"><a href="#">Blink</a></li>
+              <li uk-filter-control="filter: .fade"><a href="#">Fade / Fading</a></li>
+              <li uk-filter-control="filter: .button"><a href="#">Button</a></li>
+              <li uk-filter-control="filter: .analogRead"><a href="#">analogRead</a></li>
+              <li uk-filter-control="filter: .led-toggle"><a href="#">LED Toggle</a></li>
+              <li uk-filter-control="filter: .led-functions"><a href="#">Functions</a></li>
             </ul>
           </li>
           <li class="uk-parent">
             <a href="#">DC Motor Control</a>
+          </li>
+          <li uk-filter-control="filter: .servo-motor" class="uk-parent">
+            <a href="#">Servo Motor Control</a>
+            <ul class="uk-nav-sub">
+              <li uk-filter-control="filter: .servo-basic"><a href="#">Servo Basic</a></li>
+              <li uk-filter-control="filter: .sweep"><a href="#">Sweep</a></li>
+              <li uk-filter-control="filter: .servo-pot"><a href="#">Servo w/Potentiometer</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -184,7 +211,7 @@
               </div>
             </div>
           </li>
-          <li class="basics fading all">
+          <li class="basics fade all">
             <div
               class="entry uk-card uk-card-default uk-grid-collapse uk-transition-toggle uk-child-width-1-2@s uk-margin"
               onclick="location.href='arduino_sketches/fading/fading.html'"
@@ -246,6 +273,111 @@
                   <p style="color: black">An example that uses an analog signal as an input. Introduces the serial
                     monitor to see data.</p>
                   <span class="uk-label" style="background-color: #630b7f">Basics</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="basics led-toggle all">
+            <div
+              class="entry uk-card uk-card-default uk-grid-collapse uk-transition-toggle uk-child-width-1-2@s uk-margin"
+              onclick="location.href='arduino_sketches/toggle_led/toggle_led.html'"
+              style="border: 1px solid #000000; border-radius: 3px" uk-grid>
+              <div
+                class="uk-flex-last@s uk-card-media-right uk-transition-opaque uk-transition-scale-up uk-cover-container">
+                <img class="uk-cover" style="width: 100%; height: 100%; object-fit: cover"
+                  src="./arduino_sketches/toggle_led/toggle_led_wiring.png" alt="" />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">LED Toggle w/Button</h3>
+                  <span>Week 5</span>
+                  <p style="color: black">An example that uses a button to toggle an LED on and off.</p>
+                  <span class="uk-label" style="background-color: #630b7f">Basics</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="basics led-functions all">
+            <div
+              class="entry uk-card uk-card-default uk-grid-collapse uk-transition-toggle uk-child-width-1-2@s uk-margin"
+              onclick="location.href='arduino_sketches/led_flash/led_flash.html'"
+              style="border: 1px solid #000000; border-radius: 3px" uk-grid>
+              <div
+                class="uk-flex-last@s uk-card-media-right uk-transition-opaque uk-transition-scale-up uk-cover-container">
+                <img class="uk-cover" style="width: 100%; height: 100%; object-fit: cover"
+                  src="./arduino_sketches/led_flash/flash_circuit.png" alt="" />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">LED Flash w/Functions</h3>
+                  <span>Week 5</span>
+                  <p style="color: black">An example that uses function called flash() to make an LED flash.</p>
+                  <span class="uk-label" style="background-color: #630b7f">Basics</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="servo-motor servo-basic all">
+            <div
+              class="entry uk-card uk-card-default uk-grid-collapse uk-transition-toggle uk-child-width-1-2@s uk-margin"
+              onclick="location.href='arduino_sketches/servo_basic/servo_basic.html'"
+              style="border: 1px solid #000000; border-radius: 3px" uk-grid>
+              <div
+                class="uk-flex-last@s uk-card-media-right uk-transition-opaque uk-transition-scale-up uk-cover-container">
+                <img class="uk-cover" style="width: 100%; height: 100%; object-fit: cover"
+                  src="./arduino_sketches/servo_basic/servo_basic_wiring.png" alt="" />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Servo Minimal Example</h3>
+                  <span>Week 5</span>
+                  <p style="color: black">An example that showcases the most minimal example with servo motors.</p>
+                  <span class="uk-label" style="background-color: #5c8621">Servo Control</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="servo-motor sweep all">
+            <div
+              class="entry uk-card uk-card-default uk-grid-collapse uk-transition-toggle uk-child-width-1-2@s uk-margin"
+              onclick="location.href='arduino_sketches/sweep/sweep.html'"
+              style="border: 1px solid #000000; border-radius: 3px" uk-grid>
+              <div
+                class="uk-flex-last@s uk-card-media-right uk-transition-opaque uk-transition-scale-up uk-cover-container">
+                <img class="uk-cover" style="width: 100%; height: 100%; object-fit: cover"
+                  src="./arduino_sketches/sweep/sweep_wiring.png" alt="" />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Sweep</h3>
+                  <span>Week 5</span>
+                  <p style="color: black">An example that showcases how to change position of servo motor.</p>
+                  <span class="uk-label" style="background-color: #5c8621">Servo Control</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="servo-motor servo-pot all">
+            <div
+              class="entry uk-card uk-card-default uk-grid-collapse uk-transition-toggle uk-child-width-1-2@s uk-margin"
+              onclick="location.href='arduino_sketches/knob/knob.html'"
+              style="border: 1px solid #000000; border-radius: 3px" uk-grid>
+              <div
+                class="uk-flex-last@s uk-card-media-right uk-transition-opaque uk-transition-scale-up uk-cover-container">
+                <img class="uk-cover" style="width: 100%; height: 100%; object-fit: cover"
+                  src="./arduino_sketches/knob/knob_wiring.png" alt="" />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Servo Control w/Potentiometer (Knob)</h3>
+                  <span>Week 5</span>
+                  <p style="color: black">An example that controls servo motor with a potentiometer.</p>
+                  <span class="uk-label" style="background-color: #5c8621">Servo Control</span>
                 </div>
               </div>
             </div>
