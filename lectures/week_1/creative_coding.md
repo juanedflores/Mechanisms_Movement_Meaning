@@ -1,3 +1,7 @@
+---
+heading: Kinetic Art Showcase 
+---
+
 ## Week 1 - Kinetic Art Showcase
 <!-- .slide: class=".uk-width-1-1 uk-height-large" -->  
 

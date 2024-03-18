@@ -8,9 +8,9 @@
     <title>$if(heading)$$heading$$endif$</title>
 
     <!-- UIKit files -->
-    <link rel="stylesheet" href="../../css/uikit.min.css" />
-    <script src="../../js/uikit.min.js"></script>
-    <script src="../../js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="../../../css/uikit.min.css" />
+    <script src="../../../js/uikit.min.js"></script>
+    <script src="../../../js/uikit-icons.min.js"></script>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../resources/favicon.ico" type="image/x-icon" />
@@ -18,8 +18,9 @@
     <!-- Fonts -->
 
     <!-- Code Style -->
-    <link rel="stylesheet" href="../../css/pojoaque.css" />
+    <link rel="stylesheet" href="../../../css/pojoaque.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
     <!-- hljs -->
     <script>
@@ -40,7 +41,7 @@
     </script>
 
     <!-- Blog Style CSS -->
-    <link rel="stylesheet" href="../../css/blog_style.css" />
+    <link rel="stylesheet" href="../../../css/blog_style.css" />
 
     <style>
       #left-col {
@@ -100,6 +101,69 @@
       }
     </style>
 
+    <style>
+      td.hljs-ln-numbers {
+        text-align: center;
+        color: #ccc;
+        border-right: 1px solid #999;
+        vertical-align: top;
+        padding-right: 5px;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      td.hljs-ln-code {
+        padding-left: 10px;
+      }
+
+      .hljs-ln td.hljs-ln-numbers {
+        padding-left: 10px;
+      }
+
+      code {
+        padding: 15px;
+      }
+
+      .code-badge {
+        display: flex !important;
+        flex-direction: row !important;
+        background: #555 !important;
+        padding: 8px !important;
+        position: absolute !important;
+        right: 0px !important;
+      }
+
+      .code-badge-copy-icon {
+        font-size: 1.3em !important;
+      }
+
+      .hide-on-load {
+        display: none;
+      }
+
+      .code-badge-pre {
+        overflow: hidden;
+      }
+
+      .hljs {
+        overflow: auto;
+      }
+
+      canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+    </style>
+
     <!-- Includes other header content if needed -->
     $for(header-includes)$ $header-includes$ $endfor$
   </head>
@@ -108,7 +172,7 @@
     <!-- NAV AND HEADING -->
     <nav class="uk-navbar-container" uk-navbar>
       <div class="nav-overlay uk-navbar-left">
-        <a class="uk-navbar-item uk-logo" href="../../index.html" style="border: 1px solid #cccccc">Mechanisms, Movement, and Meaning</a>
+        <a class="uk-navbar-item uk-logo" href="../../../index.html" style="border: 1px solid #cccccc">Mechanisms, Movement, and Meaning</a>
 
         <ul class="uk-navbar-nav" style="">
           <li class=""><a href="">$if(heading)$$heading$$endif$</a></li>
@@ -148,7 +212,7 @@
     </div>
 
     <!-- highlightjs badge -->
-    <script src="../../js/highlightjs-badge.js"></script>
+    <script src="../../../js/highlightjs-badge.js"></script>
 
     <script>
       var pres = document.querySelectorAll('pre>code');
@@ -156,7 +220,7 @@
         hljs.highlightBlock(pres[i]);
       }
       var options = {
-        contentSelector: '#ArticleBody',
+        contentSelector: '#right-col',
         // CSS class(es) used to render the copy icon.
         copyIconClass: 'fa fa-copy',
         // CSS class(es) used to render the done icon.

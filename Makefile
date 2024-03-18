@@ -8,7 +8,7 @@ PANDOCFLAGSHTML =                                           \
 rwildcard = $(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))
 
 # find all markdown files
-MARKDOWN := $(call rwildcard,./,*.md)
+MARKDOWN := $(call rwildcard,./pages/,*.md)
 HTML = $(MARKDOWN:.md=.html)
 
 all: $(HTML)
