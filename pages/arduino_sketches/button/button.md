@@ -2,7 +2,7 @@
 heading: Button
 ---
 
-<img style="height:300px" src="/arduino_sketches/button/button_circuit.png"></img>
+<img style="height:300px" src="./button_circuit.png"></img>
 
 <a href="https://docs.arduino.cc/built-in-examples/digital/Button/">Arduino Info Page</a>
 
